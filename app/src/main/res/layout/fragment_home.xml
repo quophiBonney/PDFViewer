@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/first"
+    tools:context=".HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/home_toolbar"
+        android:background="@color/first"
+        android:minHeight="?actionBarSize"
+        app:title="Document Reader"
+        app:titleTextColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@color/first"
+        android:layout_below="@id/home_toolbar">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/homeimg"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/alert"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/anthon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/first_layout"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="25dp"
+            android:background="@color/white">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/background">
+
+                    <ImageView
+                        android:id="@+id/allDocs"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="pdf"
+                        android:layout_gravity="center"
+                        android:src="@drawable/docs"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/background">
+
+                    <ImageView
+                        android:id="@+id/pdf"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="pdf"
+                        android:layout_gravity="center"
+                        android:src="@drawable/roundedpdf"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/background">
+
+                    <ImageView
+                        android:id="@+id/word"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="pdf"
+                        android:layout_gravity="center"
+                        android:src="@drawable/word"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/background">
+
+                    <ImageView
+                        android:id="@+id/zip"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="pdf"
+                        android:layout_gravity="center"
+                        android:src="@drawable/zip"/>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

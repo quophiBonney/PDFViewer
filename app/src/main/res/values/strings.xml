@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">File Reader</string>
+    <string name="home">Home</string>
+    <string name="stories">Stories</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="wait">Please Wait....</string>
+    <string name="pdf_view">PDF View</string>
+    <string name="play">Play File</string>
+    <string name="allDocs">All Documents</string>
+    <string name="pdf">PDF File</string>
+    <string name="word">Word Document</string>
+    <string name="zip">ZIP File</string>
+    <string name="alert">Tap On Any Image To Read The File You Want</string>
+</resources>
